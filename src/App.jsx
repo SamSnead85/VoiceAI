@@ -17,6 +17,8 @@ import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
 import DemoPage from './pages/DemoPage'
 import CalculatorPage from './pages/CalculatorPage'
+import HealthcareHub from './pages/HealthcareHub'
+import FinancialHub from './pages/FinancialHub'
 
 // Home page component
 const HomePage = () => (
@@ -50,6 +52,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/demo" element={<DemoPage />} />
           <Route path="/calculator" element={<CalculatorPage />} />
+          <Route path="/solutions/healthcare" element={<HealthcareHub />} />
+          <Route path="/solutions/financial" element={<FinancialHub />} />
         </Routes>
       </div>
     </Router>
