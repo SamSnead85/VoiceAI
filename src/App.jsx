@@ -19,6 +19,7 @@ import DemoPage from './pages/DemoPage'
 import CalculatorPage from './pages/CalculatorPage'
 import HealthcareHub from './pages/HealthcareHub'
 import FinancialHub from './pages/FinancialHub'
+import StatusPage from './pages/StatusPage'
 
 // Home page component
 const HomePage = () => (
@@ -54,6 +55,7 @@ function App() {
           <Route path="/calculator" element={<CalculatorPage />} />
           <Route path="/solutions/healthcare" element={<HealthcareHub />} />
           <Route path="/solutions/financial" element={<FinancialHub />} />
+          <Route path="/status" element={<StatusPage />} />
         </Routes>
       </div>
     </Router>
