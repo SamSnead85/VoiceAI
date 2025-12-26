@@ -38,6 +38,10 @@ import TermsPage from './pages/TermsPage'
 import SecurityPage from './pages/SecurityPage'
 import AccessibilityPage from './pages/AccessibilityPage'
 import WebinarPage from './pages/WebinarPage'
+import PartnersPage from './pages/PartnersPage'
+import CareersPage from './pages/CareersPage'
+import AboutPage from './pages/AboutPage'
+import ChangelogPage from './pages/ChangelogPage'
 
 // Home page component
 const HomePage = () => (
@@ -78,6 +82,12 @@ function App() {
           <Route path="/docs" element={<DocsPage />} />
           <Route path="/dashboard" element={<DashboardPreview />} />
           <Route path="/webinar" element={<WebinarPage />} />
+
+          {/* Company Pages */}
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/partners" element={<PartnersPage />} />
+          <Route path="/changelog" element={<ChangelogPage />} />
 
           {/* Solution Hubs */}
           <Route path="/solutions/healthcare" element={<HealthcareHub />} />
