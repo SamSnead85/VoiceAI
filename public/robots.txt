@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Sitemap: https://voiceai.com/sitemap.xml
+
+# Block admin/internal paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+
+# Allow crawlers to index all public content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay for less important bots
+User-agent: *
+Crawl-delay: 1
